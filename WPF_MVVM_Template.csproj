@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Resources\**" />
     <Compile Remove="Services\TgBotServices\Validators\**" />
+    <EmbeddedResource Remove="Resources\**" />
     <EmbeddedResource Remove="Services\TgBotServices\Validators\**" />
+    <None Remove="Resources\**" />
     <None Remove="Services\TgBotServices\Validators\**" />
+    <Page Remove="Resources\**" />
     <Page Remove="Services\TgBotServices\Validators\**" />
   </ItemGroup>
 
@@ -23,10 +27,6 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Telegram.Bot" Version="16.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\Base\" />
   </ItemGroup>
 
 </Project>

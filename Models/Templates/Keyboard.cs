@@ -8,7 +8,7 @@ namespace WPF_MVVM_Template.Models
         public const string generalHelloMessage = "Доброго время суток.";
         public const string backButtonName = "Назад";
         public const string weatherMenuButtonName = "Погода";
-        public const string connection = "Связь с богом - soon";
+        public const string connection = "Связь c хостом - soon";
         public const string more2ButtonName = "В \"разработке\" 2";
 
         public static IReplyMarkup GetButtons()

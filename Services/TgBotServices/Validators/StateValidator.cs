@@ -1,6 +1,5 @@
 ﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using Telegram.Bot.Args;
 using Telegram.Bot.Types;
 
 
@@ -19,7 +18,7 @@ namespace WPF_MVVM_Template.Models.Validators
                 {
                     State = State.New,
                     Id = Message.Chat.Id,
-                    Messages = new ObservableCollection<Message>() {Message}
+                    Messages = new ObservableCollection<Message>() { Message }
                 });
 
             switch (db[index].State)

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Linq;
+using System.Windows;
 using WPF_MVVM_Template.Services;
 using WPF_MVVM_Template.ViewModels;
 
@@ -39,7 +38,7 @@ namespace WPF_MVVM_Template
         {
             base.OnExit(e);
 
-            using(Host) await Host.StopAsync();
+            using (Host) await Host.StopAsync();
         }
     }
 }

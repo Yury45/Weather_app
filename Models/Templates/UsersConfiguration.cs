@@ -1,9 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using WPF_MVVM_Template.Annotations;
-using WPF_MVVM_Template.Services;
+﻿using System.Collections.ObjectModel;
 using WPF_MVVM_Template.Services.Interfaces;
-using WPF_MVVM_Template.ViewModels;
 
 namespace WPF_MVVM_Template.Models.Templates
 {

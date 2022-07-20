@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Windows;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Win32;
 using WPF_MVVM_Template.Infrastructure.Commands.Base;
-using WPF_MVVM_Template.Models;
 using WPF_MVVM_Template.Models.Templates;
 using WPF_MVVM_Template.Services;
-using WPF_MVVM_Template.Services.Interfaces;
 
 namespace WPF_MVVM_Template.Infrastructure.Commands
 {

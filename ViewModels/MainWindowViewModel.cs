@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Windows.Data;
 using Telegram.Bot.Types;
 using WPF_MVVM_Template.Models;
@@ -132,12 +130,12 @@ namespace WPF_MVVM_Template.ViewModels
         #region Token : string - Token
 
         /// <summary>Token  свойство</summary>
-
-        private string? _Token = "5081119124:AAGXGoC_Qbi8ySJSVtHbPjMdNA27Tbwr8oo";
+        ///Token -  "5081119124:AAGXGoC_Qbi8ySJSVtHbPjMdNA27Tbwr8oo"
+        private string? _Token;
         public string? Token
         {
             get => _Token;
-            set => Set(ref _Token, value);
+            set => Set(ref this.CurrentConfig.Token, value);
         }
 
         #endregion
@@ -145,12 +143,12 @@ namespace WPF_MVVM_Template.ViewModels
         #region WeatherKeyAPI : string - API ключ от сайта погоды
 
         /// <summary>API ключ от сайта погоды свойство</summary>
-
-        private string? _WeatherKeyAPI = "bec164245ddbee25d0282f7ef54259a9";
+        ///APIKey - bec164245ddbee25d0282f7ef54259a9
+        private string? _WeatherKeyAPI;
         public string? WeatherKeyAPI
         {
             get => _WeatherKeyAPI;
-            set => Set(ref _WeatherKeyAPI, value);
+            set => Set(ref this.CurrentConfig.ApiKey, value);
         }
 
         #endregion

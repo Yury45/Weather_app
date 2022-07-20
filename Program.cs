@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
+using System;
 
 namespace WPF_MVVM_Template
 {
@@ -20,7 +16,7 @@ namespace WPF_MVVM_Template
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices(App.ConfigureServices)
-                
+
         ;
     }
 }

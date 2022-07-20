@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WPF_MVVM_Template.Models
 {
@@ -24,7 +19,7 @@ namespace WPF_MVVM_Template.Models
 
         public override string ToString()
         {
-            return $"Город: {name}\nВремя запроса: {new DateTime(1970,1,1,0,0,0,0).AddSeconds(timezone+dt)}" +
+            return $"Город: {name}\nВремя запроса: {new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(timezone + dt)}" +
                    $"\n{sys.ToString(timezone)}\n{main.ToString()}\n{wind.ToString()}\n{coord.ToString()}\n{weather[0].ToString()}";
         }
     }
@@ -64,7 +59,7 @@ namespace WPF_MVVM_Template.Models
         public override string ToString()
         {
 
-            return $"Текущая температура: {temp} °C\nДавление: {Math.Round(pressure * 0.750062,1)} мм.рт.ст";
+            return $"Текущая температура: {temp} °C\nДавление: {Math.Round(pressure * 0.750062, 1)} мм.рт.ст";
         }
     }
 

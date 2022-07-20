@@ -10,7 +10,7 @@ namespace WPF_MVVM_Template.Infrastructure.Commands
         private readonly Func<object, bool> _CanExecute;
 
         public LambdaCommandAsync(Action Execute, Func<bool> CanExecute = null)
-            :this(p=>Execute(),CanExecute is null ? (Func<object,bool>)null : p => CanExecute())
+            : this(p => Execute(), CanExecute is null ? (Func<object, bool>)null : p => CanExecute())
         {
 
         }

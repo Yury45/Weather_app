@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Windows.Documents;
-using Telegram.Bot.Args;
+﻿using System.Collections.ObjectModel;
 using Telegram.Bot.Types;
 
 namespace WPF_MVVM_Template.Models
@@ -26,7 +22,7 @@ namespace WPF_MVVM_Template.Models
 
         #region ID клиентского чата
 
-        public long Id {get; set; }
+        public long Id { get; set; }
 
         #endregion
 

@@ -15,7 +15,7 @@ namespace WPF_MVVM_Template.Infrastructure.Commands.Base
             get => _Executable;
             set
             {
-                if(_Executable == value) return;
+                if (_Executable == value) return;
                 _Executable = value;
                 CommandManager.InvalidateRequerySuggested();
             }

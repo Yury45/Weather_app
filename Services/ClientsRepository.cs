@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WPF_MVVM_Template.Models;
+﻿using WPF_MVVM_Template.Models;
 using WPF_MVVM_Template.Services.Base;
 
 namespace WPF_MVVM_Template.Services

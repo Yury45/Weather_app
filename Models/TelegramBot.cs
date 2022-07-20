@@ -2,9 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Threading;
 using Telegram.Bot;
 using Telegram.Bot.Args;
 using Telegram.Bot.Types;
@@ -92,7 +90,7 @@ namespace WPF_MVVM_Template.Models
 
         private async void OnMessegeHandler(object P, MessageEventArgs Arg)
         {
-            App.Current.Dispatcher.Invoke((Action) delegate { Logs(Arg.Message); });
+            App.Current.Dispatcher.Invoke((Action)delegate { Logs(Arg.Message); });
             SendAnswerAsync(Arg.Message);
 
         }
@@ -149,7 +147,7 @@ namespace WPF_MVVM_Template.Models
                 };
 
                 ClientsDB.Add(currentClient);
-                
+
             }
             return;
         }

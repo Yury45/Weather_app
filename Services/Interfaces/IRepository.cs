@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WPF_MVVM_Template.Models;
 
 namespace WPF_MVVM_Template.Services.Interfaces
 {
-    public interface IRepository<T> where T: IEntity
+    public interface IRepository<T> where T : IEntity
     {
         void Add(T item);
 

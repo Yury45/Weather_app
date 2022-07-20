@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using Telegram.Bot.Types;
+﻿using System.Collections.ObjectModel;
 using WPF_MVVM_Template.Models;
 
 namespace WPF_MVVM_Template.Services.Interfaces

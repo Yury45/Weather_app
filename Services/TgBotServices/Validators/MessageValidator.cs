@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Telegram.Bot.Args;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 
@@ -16,21 +15,21 @@ namespace WPF_MVVM_Template.Models
 
             if (Message.Type == MessageType.Text)
             {
-                if (Equals(db[index].State, State.SearchWeather) || Equals(db[index].State, State.Searching) || index<0)
-                    switch (Message.Text) 
-                    { 
+                if (Equals(db[index].State, State.SearchWeather) || Equals(db[index].State, State.Searching) || index < 0)
+                    switch (Message.Text)
+                    {
                         case Keyboard.weatherMenuButtonName:
                             if (db[index].State == State.SearchWeather) goto default;
 
                             db[index].State = State.SearchWeather;
-                            return await bot.SendTextMessageAsync(Message.Chat.Id, 
+                            return await bot.SendTextMessageAsync(Message.Chat.Id,
                                 "Введите название города:",
                                 replyMarkup: Keyboard.GetWeatherButtons());
-                        
+
                         case Keyboard.backButtonName:
-                        db[index].State = State.Searching;
-                        return await bot.SendTextMessageAsync(Message.Chat.Id, 
-                            "Вы возвращены в главое меню.",replyMarkup: Keyboard.GetButtons()); 
+                            db[index].State = State.Searching;
+                            return await bot.SendTextMessageAsync(Message.Chat.Id,
+                                "Вы возвращены в главое меню.", replyMarkup: Keyboard.GetButtons());
 
                         case Keyboard.connection:
                             return await bot.SendTextMessageAsync(Message.Chat.Id,

@@ -67,7 +67,7 @@ namespace WPF_MVVM_Template.Models
         {
             var bot = new TelegramBotClient(Token);
 
-            //if (!bot.GetMeAsync().Result.IsBot) return;
+
             if (TryConnection(bot, ApiKey))
             {
                 Bot = bot;
